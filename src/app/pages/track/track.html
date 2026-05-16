@@ -1,5 +1,5 @@
 <div class="container">
-    <app-header/>
+    <app-header />
     <main class="track-content">
         <section class="track-card track-search">
             <div class="track-title">Отследить посылку</div>
@@ -9,7 +9,7 @@
                         autocomplete="off" />
                 </div>
                 <button id="trackButton" class="button track-button" type="button"
-                    (click)="trackShipment">Отследить</button>
+                    (click)="trackShipment()">Отследить</button>
             </div>
         </section>
         <section class="track-card track-result" id="trackResult" [class.is-visible]="trackResult()">
@@ -67,6 +67,7 @@
                     </div>
                     }
                 </div>
+            </div>
         </section>
     </main>
 </div>
